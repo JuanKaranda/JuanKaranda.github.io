@@ -1,3 +1,4 @@
+alert("Hola, Bienvenido. Ingresa la cantidad que deseas retirar")
 class billete
 {
   constructor(n, v, c)
