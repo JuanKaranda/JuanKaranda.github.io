@@ -69,7 +69,14 @@ function cajero()
           money.value = money.value - (b.valor * papeles);
           if(papeles > 0)
           {
-            resultado.innerHTML += papeles + " billete de, ";
+            if(papeles > 1)
+            {
+              resultado.innerHTML += papeles + " billetes de, ";
+            }
+            else
+            {
+              resultado.innerHTML += papeles + " billete de, ";
+            }
             b.dibujar();
             console.log(b.valor);
             console.log(papeles);
@@ -87,7 +94,14 @@ function cajero()
           money.value = money.value - (b.valor * papeles);
           if(papeles > 0)
           {
-            resultado.innerHTML += papeles + " billete de, ";
+            if(papeles > 1)
+            {
+              resultado.innerHTML += papeles + " billetes de, ";
+            }
+            else
+            {
+              resultado.innerHTML += papeles + " billete de, ";
+            }
             b.dibujar();
             console.log(b.valor);
             console.log(papeles);
