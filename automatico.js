@@ -13,6 +13,7 @@ class billete
   dibujar()
   {
     document.body.appendChild(this.imagen);
+    console.log("uno dibujado")
   }
   calculo()
   {
@@ -71,13 +72,16 @@ function cajero()
           {
             if(papeles > 1)
             {
-              resultado.innerHTML += papeles + " billetes de, ";
+              resultado.innerHTML += papeles + " billetes de " + b.valor + " dolares,";
             }
             else
             {
-              resultado.innerHTML += papeles + " billete de, ";
+              resultado.innerHTML += papeles + " billete de " + b.valor + " dolares,";
             }
-            b.dibujar();
+            for(var i = 1; i <= papeles ; i++ )
+            {
+              b.dibujar();
+            }
             console.log(b.valor);
             console.log(papeles);
             cajita = cajita - (b.valor * papeles);
@@ -96,13 +100,16 @@ function cajero()
           {
             if(papeles > 1)
             {
-              resultado.innerHTML += papeles + " billetes de, ";
+              resultado.innerHTML += papeles + " billetes de " + b.valor + " dolares,";
             }
             else
             {
-              resultado.innerHTML += papeles + " billete de, ";
+              resultado.innerHTML += papeles + " billete de " + b.valor + " dolares,";
             }
-            b.dibujar();
+            for(var i = 1; i <= papeles ; i++ )
+            {
+              b.dibujar();
+            }
             console.log(b.valor);
             console.log(papeles);
             cajita = cajita - (b.valor * papeles);
